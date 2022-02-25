@@ -121,7 +121,16 @@ def three(input):
 
 
 def four(input):
-    return False
+	c = 0
+	i = 0
+	e = 0
+    for char in input:
+		if char in "iI":
+			i = i + 1
+		if char in "eE":
+			e = e + 1
+	if e >
+	return input
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -141,7 +150,9 @@ def four(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def five(input):
-	return 1
+    for num in range(2, input + 1):
+        input *= num
+    return input
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
