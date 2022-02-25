@@ -94,7 +94,11 @@ def two(arg1):
 	# How do we ignore case in a String? help(str) may offer some insight.
 
 def three(input):
-    return 0
+    counter=0
+    for char in input:
+        if char in "aeiouAEIOU":
+           counter = counter + 1
+    return counter
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
