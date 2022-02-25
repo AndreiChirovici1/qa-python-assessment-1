@@ -35,6 +35,9 @@
 
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
+from ossaudiodev import SOUND_MIXER_LINE2
+
+
 def one(input1, input2):
 	if len(input1) == len(input2):
 		return input1 + " " + input2
@@ -229,7 +232,19 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
-	return 0
+	list = arg1.split(" ")
+	sum1 = int(list[0(0)]) + int(list[0(1)])
+	sum2 = int(list[1(0)]) + int(list[1(1)])
+	sum3 = int(list[2(0)]) + int(list[2(1)])
+
+	if (sum1 >= sum2) and (sum1 >= sum3):
+    	largest = sum1
+    elif (sum2 >= sum1) and (sum2 >= sum3):
+        largest = sum2
+    else:
+        largest = sum3
+		
+	return largest
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
